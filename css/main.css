@@ -1,2 +1,128 @@
-
 /*  Put your CSS Here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: -webkit-gradient linear,
+    (left bottom, left top, from(#fbc2eb), to(#a18cd1));
+  background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  color: #cccccc;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  /* max-height: 100%; */
+  /* object-fit: cover; */
+  border-radius: 0.25rem;
+}
+
+h4 {
+  margin: auto;
+}
+
+input {
+  border-radius: 0.15em;
+  background-color: black;
+  padding: 0.25em;
+}
+
+option {
+  border: 0.15rem 0.15rem;
+  padding: 0.25em;
+}
+/* PAGE-SPECIFIC STYLES */
+
+.main-card {
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 75%;
+  background-color: black;
+  border-radius: 0.25rem 0.25rem;
+  margin: auto;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.dropdown {
+  max-width: 8rem;
+  background-color: black;
+  color: white;
+  font-size: 0.5rem;
+  padding: 0.25rem;
+}
+
+.button {
+  background-color: limegreen;
+  border: 0.25rem solid limegreen;
+  width: 3rem;
+  color: white;
+  font-size: 0.05rem;
+  border-radius: 0.85rem;
+}
+
+.button:hover {
+  box-shadow: 0.25em solid gray;
+  opacity: 60%;
+}
+
+/* MEDIA SCREEN FOR TABLET 767px and ABOVE */
+
+@media screen and (min-width: 767px) {
+  .main-card {
+    flex-direction: row;
+  }
+  img {
+    object-fit: contain;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .form,
+  label,
+  input,
+  .dropdown {
+    font-size: 1.25rem;
+  }
+
+  label,
+  input,
+  .dropdown {
+    align-content: space-around;
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+
+  .heroimage {
+    max-width: 50%;
+    height: 100%;
+  }
+
+  .dropdown {
+    width: 65%;
+  }
+  .button {
+    margin-left: 12rem;
+  }
+}
